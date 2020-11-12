@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.html {
+    text-transform: uppercase;
+}
+
+.container{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    color: navajowhite;
+}
+
+
+.container > * {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.header{
+    background-color: red;
+    grid-area: head;
+}
+
+.menu {
+    background-color: orange;
+    grid-area: menu;
+}
+
+.hero {
+    background-color: yellow;
+    grid-area: hero;
+}
+
+.main {
+    background-color: green;
+    grid-area: main;
+}
+
+.banner {
+    background-color: blue;
+    grid-area: ban;
+}
+
+.extra {
+    background-color: purple;
+    grid-area: ex;
+}
+
+.image {
+    background-color: magenta;
+    grid-area: img;
+}
+
+@media (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "head"
+        "menu"
+        "hero"
+        "main"
+        "ban"
+        "ex"
+        "omg"
+        ;
+        grid-template-rows: 360px 600px 300px 250px 250px 205px 250px 250px;
+    }
+}
